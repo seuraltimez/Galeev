@@ -10,6 +10,7 @@ function initScroll(){
 		$.scrollify({
 			section : "section",
 			easing: "easeInOutCubic",
+			touchScroll:false,
 		});
 	});
 }
@@ -120,26 +121,26 @@ function initStickyScrollBlock() {
 				jQuery('.header-main').stickyScrollBlock('destroy');
 			}
 		},
-		// '..1023': {
-		// 	on: function() {
-		// 		jQuery('.header_main').stickyScrollBlock({
-		// 			setBoxHeight: true,
-		// 			activeClass: 'fixed-position',
-		// 			positionType: 'fixed',
-		// 			extraTop: function() {
-		// 				var totalHeight = 0;
-		// 				jQuery('0').each(function() {
-		// 					totalHeight += jQuery(this).outerHeight();
-		// 				});
-		// 				return totalHeight;
-		// 			},
-		// 			showAfterScrolled: false
-		// 		});
-		// 	},
-		// 	off: function() {
-		// 		jQuery('.header_main').stickyScrollBlock('destroy');
-		// 	}
-		// }
+		'..1023': {
+			on: function() {
+				jQuery('.header-main').stickyScrollBlock({
+					setBoxHeight: true,
+					activeClass: 'fixed-position',
+					positionType: 'fixed',
+					extraTop: function() {
+						var totalHeight = 0;
+						jQuery('0').each(function() {
+							totalHeight += jQuery(this).outerHeight();
+						});
+						return totalHeight;
+					},
+					showAfterScrolled: false
+				});
+			},
+			off: function() {
+				jQuery('.header-main').stickyScrollBlock('destroy');
+			}
+		}
 	});
 }
 
