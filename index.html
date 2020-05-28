@@ -15,27 +15,43 @@
 	<link rel="stylesheet" href="fonts/icofont.min.css">
 </head>
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	ym(62786221, "init", {
+		clickmap:true,
+		trackLinks:true,
+		accurateTrackBounce:true,
+		webvisor:true
+	});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/62786221" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 <body>
 
 	<header class="header-main">
 		<div class="header_mobile">
 			<ul>
-			<li class="block_header_mobile">
-				<a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
-			</li>
-			<li class="block_header_mobile">
-				<a href="#about"><i class="fa fa-user" aria-hidden="true"></i></a>
-			</li>
-			<li class="block_header_mobile">
-				<a href="#skills"><i class="icofont-unique-idea"></i></a>
-			</li>
-			<li class="block_header_mobile">
-				<a href="#portfolio"><i class="icofont-bag-alt"></i></a>
-			</li>
-			<li class="block_header_mobile">
-				<a href="#contacts"><i class="fa fa-phone" aria-hidden="true"></i></a>
-			</li>
-		</ul>
+				<li class="block_header_mobile">
+					<a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
+				</li>
+				<li class="block_header_mobile">
+					<a href="#about"><i class="fa fa-user" aria-hidden="true"></i></a>
+				</li>
+				<li class="block_header_mobile">
+					<a href="#skills"><i class="icofont-unique-idea"></i></a>
+				</li>
+				<li class="block_header_mobile">
+					<a href="#portfolio"><i class="icofont-bag-alt"></i></a>
+				</li>
+				<li class="block_header_mobile">
+					<a href="#contacts"><i class="fa fa-phone" aria-hidden="true"></i></a>
+				</li>
+			</ul>
 		</div>
 		<div class="navbar">
 			<nav class="nav">
@@ -78,7 +94,7 @@
 	<section id="home" class="backgroundHome">
 		<div class="header_video">
 
-			<video loop="" muted="" autoplay="" poster="img/src/video.mp4" class="header_video_movie">
+			<video loop="" muted="" autoplay="" preload="metadata" poster="img/src/poster.jpg" class="header_video_movie">
 				<source src="img/src/video.mp4" type="video/mp4">
 					<source src="img/src/video.mp4" type="video/mp4">
 					</video>
@@ -95,12 +111,12 @@
 				<div class="container">
 					<h2>Обо мне</h2>
 					<div class="row">
-						<div class="col-xl-4 col-lg-5 col-md-12 col-xm-12 col-xs-12">
+						<div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-xs-12">
 							<div class="blcok_about_me">
 								<img src="img/src/me-min.JPG" alt="">
 							</div>
 						</div>
-						<div class="col-xl-8 col-lg-7 col-md-12 col-xm-12 col-xs-12">
+						<div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-xs-12">
 							<div class="block_about_me">
 								<div class="block_about_me_title">
 									<h3>Galeev Albert</h3>
@@ -131,14 +147,14 @@
 											<span>Санкт-Петербург</span>
 										</li>
 										<li class="list_two_column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-											<i class="fa fa-calendar" aria-hidden="true"></i>
-											<div class="list_two_column_title">Дата рождения:</div>
-											<span>17.09.1995</span>
+											<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+											<div class="list_two_column_title">Образование:</div>
+											<span>2 высших</span>
 										</li>
 										<li class="list_two_column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 											<i class="fa fa-briefcase" aria-hidden="true"></i>
 											<div class="list_two_column_title">Работа:</div>
-											<a href="https://www.elenagray.ru/" target="_blank">Elenagray</a>
+											<span>В активном поиске</span>
 										</li>
 										<li class="list_two_column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 											<i class="fa fa-history" aria-hidden="true"></i>
@@ -153,9 +169,10 @@
 									Скачать резюме
 									<span class="main-backgroundColor"></span>
 								</a>
-								<a class="btn main-color" href="#contacts">
+								<a class="btn main-color btn_before_active" href="#contacts">
 									Связаться со мной
 									<span class="main-backgroundColor"></span>
+									<div class="bar-lineG"></div>
 								</a>
 							</div>
 						</div>
@@ -167,7 +184,7 @@
 				<div class="container">
 					<h2>Навыки</h2>
 					<div class="row">
-						<div class="col-xl-6 col-lg-6 col-md-6 col-xm-12 col-xs-12">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<ul>
 								<li>
 									<i class="fa fa-html5" aria-hidden="true"></i>
@@ -203,7 +220,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xl-6 col-lg-6 col-md-6 col-xm-12 col-xs-12">
+						<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<ul>
 								<li>
 									<i class="icofont-file-javascript"></i>
@@ -241,9 +258,10 @@
 						</div>
 					</div>
 					<div class="block_btn">
-						<a href="#contacts" class="btn">
+						<a href="#contacts" class="btn btn_before_active">
 							Связаться со мной
 							<span class="main-backgroundColor"></span>
+							<div class="bar-lineG"></div>
 						</a>
 					</div>
 				</div>
@@ -255,7 +273,7 @@
 					<h2>Портфолио</h2>
 					<div class="subtitle">Небольшая подборка проектов</div>
 					<div class="row">
-						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-xm-6 col-xs-12">
+						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="block_portfolio">
 								<img src="img/src/landing_min.png" alt="">
 								<a data-fancybox="" href="img/src/landing_full.png" class="g_more_btn btn full_img"><i class="fa fa-search"></i><span class="main-backgroundColor"></span></a>
@@ -263,35 +281,35 @@
 								<a href="https://seuraltimez.github.io/last-landing/" target="_blank" class="g_more_btn btn visit_site"><i class="icofont-external-link"></i><span class="main-backgroundColor"></span></a>
 							</div>
 						</div>
-						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-xm-6 col-xs-12">
+						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="block_portfolio">
 								<img src="img/src/art_min.jpeg" alt="">
 								<a data-fancybox="" href="img/src/art_full.jpg" class="g_more_btn btn full_img"><i class="fa fa-search"></i><span class="main-backgroundColor"></span></a>
 								<a href="http://www.artwoodtoys.ru" target="_blank" class="g_more_btn btn visit_site"><i class="icofont-external-link"></i><span class="main-backgroundColor"></span></a>
 							</div>
 						</div>
-						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-xm-6 col-xs-12">
+						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="block_portfolio">
 								<img src="img/src/gver_min.jpeg" alt="">
 								<a data-fancybox="" href="img/src/gver_full.jpg" class="g_more_btn btn full_img"><i class="fa fa-search"></i><span class="main-backgroundColor"></span></a>
 								<a href="http://gver-group.com" target="_blank" class="g_more_btn btn visit_site"><i class="icofont-external-link"></i><span class="main-backgroundColor"></span></a>
 							</div>
 						</div>
-						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-xm-6 col-xs-12">
+						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="block_portfolio">
 								<img src="img/src/globus_min.jpeg" alt="">
 								<a data-fancybox="" href="img/src/globus_full.jpg" class="g_more_btn btn full_img"><i class="fa fa-search"></i><span class="main-backgroundColor"></span></a>
 								<a href="http://www.globus-pravo.ru" target="_blank" class="g_more_btn btn visit_site"><i class="icofont-external-link"></i><span class="main-backgroundColor"></span></a>
 							</div>
 						</div>
-						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-xm-6 col-xs-12">
+						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="block_portfolio">
 								<img src="img/src/sicos-min.png" alt="">
 								<a data-fancybox="" href="img/src/sicos_full.jpg" class="g_more_btn btn full_img"><i class="fa fa-search"></i><span class="main-backgroundColor"></span></a>
 								<a href="http://www.saicos-shop.ru" target="_blank" class="g_more_btn btn visit_site"><i class="icofont-external-link"></i><span class="main-backgroundColor"></span></a>
 							</div>
 						</div>
-						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-xm-6 col-xs-12">
+						<div class="block_portfolio_wrapper col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="block_portfolio">
 								<img src="img/src/sf_min.jpeg" alt="">
 								<a data-fancybox="" href="img/src/sf_full.jpg" class="g_more_btn btn full_img"><i class="fa fa-search"></i><span class="main-backgroundColor"></span></a>
@@ -307,37 +325,41 @@
 				<div class="container">
 					<h2>Контакты</h2>
 					<div class="row">
-						<div class="col-xl-8 col-lg-8 col-md-7 col-xm-12 col-xs-12">
-							<form action="">
+						<div class="col-xl-8 col-lg-8 col-md-7 col-sm-12 col-xs-12">
+							<form action="php/telegram.php" method="POST">
 								<div class="row">
-									<div class="col-6">
-										<input type="text" id="name" placeholder="Имя" pattern="^(?!.*WWW|.*www|.*http|.*HTTP|.*@).*$" required>
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<input type="text" name="user_name" id="name" placeholder="Имя" required>
 									</div>
-									<div class="col-6">
-										<input type="tel" id="tel" placeholder="Телефон">
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<input type="tel" name="user_phone" id="tel" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<input type="text" id="company" name="company" placeholder="Название комапании" required>
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<input type="email" id="email" name="user_email" placeholder="Email" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-12">
-										<input type="text" id="company" placeholder="Название комапании">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<textarea required id="comments" name="c-comments" pattern="^(?!.*WWW|.*www|.*http|.*HTTP|.*@).*$" placeholder="Сообщение" required></textarea>
+										<textarea required id="massage" name="massage" pattern="^(?!.*WWW|.*www|.*http|.*HTTP|.*@).*$" placeholder="Сообщение" required></textarea>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col">
-										<a href="#" class="btn">
+										<button type="submit" class="btn btn_before_active">
 											Отправить
 											<span class="main-backgroundColor"></span>
-										</a>
+											<div class="bar-lineG"></div>
+										</button>
 									</div>
 								</div>
 							</form>
 						</div>
-						<div class="col-xl-4 col-lg-4 col-md-5 col-xm-12 col-xs-12">
+						<div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-xs-12">
 							<h2>Связаться</h2>
 							<div class="block_contact">
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
